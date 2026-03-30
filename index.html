@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Site Services LLC</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* HEADER */
+        header {
+            background: #1b3a57;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1581091870627-3a5c5c9c1f5b') center/cover no-repeat;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 500px;
+        }
+
+        .btn {
+            background: #ffcc00;
+            padding: 12px 25px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px 40px;
+        }
+
+        .services {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .service-box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            width: 30%;
+            min-width: 250px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        .service-box h3 {
+            margin-top: 0;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 500px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1b3a57;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px) {
+            .hero h2 { font-size: 32px; }
+            .services { flex-direction: column; }
+            .service-box { width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Summit Site Services LLC</h1>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Industrial Equipment Repair & Site Cleanup</h2>
+    <p>Reliable, safety‑focused contracting services for industrial and construction environments.</p>
+    <a class="btn" href="tel:5097926594">Call Now: 509‑792‑6594</a>
+</div>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>Industrial Equipment Repair</h3>
+            <p>Heavy machinery diagnostics, mechanical repairs, welding, fabrication, and on‑site troubleshooting.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Site Cleanup</h3>
+            <p>Construction debris removal, industrial site clearing, and jobsite maintenance.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Emergency Response</h3>
+            <p>Fast turnaround for urgent breakdowns, storm cleanup, and site stabilization.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Summit Site Services</h2>
+    <p>Owned and operated by <strong>Geovanni Manzo</strong>, Summit Site Services LLC provides dependable industrial repair and cleanup services across the region.</p>
+    <p><strong>License:</strong> SUMMISS743DL</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+        <p><strong>Phone:</strong> 509‑792‑6594</p>
+        <p><strong>Email:</strong> your-email@example.com</p>
+        <p><strong>Service Area:</strong> Your region here</p>
+    </div>
+</section>
+
+<footer>
+    Summit Site Services LLC • License: SUMMISS743DL • 509‑792‑6594
+</footer>
+
+</body>
+</html>
